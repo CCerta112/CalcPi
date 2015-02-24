@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E973D72C1A9C9C76004BCCD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973D72B1A9C9C76004BCCD3 /* AppDelegate.swift */; };
+		E973D72E1A9C9C76004BCCD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973D72D1A9C9C76004BCCD3 /* ViewController.swift */; };
+		E973D7301A9C9C76004BCCD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E973D72F1A9C9C76004BCCD3 /* Images.xcassets */; };
+		E973D7331A9C9C76004BCCD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E973D7311A9C9C76004BCCD3 /* Main.storyboard */; };
+		E973D73F1A9C9C76004BCCD3 /* CalcPiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973D73E1A9C9C76004BCCD3 /* CalcPiTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E973D7391A9C9C76004BCCD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E973D71E1A9C9C76004BCCD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E973D7251A9C9C76004BCCD3;
+			remoteInfo = CalcPi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E973D7261A9C9C76004BCCD3 /* CalcPi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcPi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E973D72A1A9C9C76004BCCD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E973D72B1A9C9C76004BCCD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E973D72D1A9C9C76004BCCD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E973D72F1A9C9C76004BCCD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E973D7321A9C9C76004BCCD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E973D7381A9C9C76004BCCD3 /* CalcPiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcPiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E973D73D1A9C9C76004BCCD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E973D73E1A9C9C76004BCCD3 /* CalcPiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcPiTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E973D7231A9C9C76004BCCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E973D7351A9C9C76004BCCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E973D71D1A9C9C76004BCCD3 = {
+			isa = PBXGroup;
+			children = (
+				E973D7281A9C9C76004BCCD3 /* CalcPi */,
+				E973D73B1A9C9C76004BCCD3 /* CalcPiTests */,
+				E973D7271A9C9C76004BCCD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E973D7271A9C9C76004BCCD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E973D7261A9C9C76004BCCD3 /* CalcPi.app */,
+				E973D7381A9C9C76004BCCD3 /* CalcPiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E973D7281A9C9C76004BCCD3 /* CalcPi */ = {
+			isa = PBXGroup;
+			children = (
+				E973D72B1A9C9C76004BCCD3 /* AppDelegate.swift */,
+				E973D72D1A9C9C76004BCCD3 /* ViewController.swift */,
+				E973D72F1A9C9C76004BCCD3 /* Images.xcassets */,
+				E973D7311A9C9C76004BCCD3 /* Main.storyboard */,
+				E973D7291A9C9C76004BCCD3 /* Supporting Files */,
+			);
+			path = CalcPi;
+			sourceTree = "<group>";
+		};
+		E973D7291A9C9C76004BCCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E973D72A1A9C9C76004BCCD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E973D73B1A9C9C76004BCCD3 /* CalcPiTests */ = {
+			isa = PBXGroup;
+			children = (
+				E973D73E1A9C9C76004BCCD3 /* CalcPiTests.swift */,
+				E973D73C1A9C9C76004BCCD3 /* Supporting Files */,
+			);
+			path = CalcPiTests;
+			sourceTree = "<group>";
+		};
+		E973D73C1A9C9C76004BCCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E973D73D1A9C9C76004BCCD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E973D7251A9C9C76004BCCD3 /* CalcPi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E973D7421A9C9C76004BCCD3 /* Build configuration list for PBXNativeTarget "CalcPi" */;
+			buildPhases = (
+				E973D7221A9C9C76004BCCD3 /* Sources */,
+				E973D7231A9C9C76004BCCD3 /* Frameworks */,
+				E973D7241A9C9C76004BCCD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalcPi;
+			productName = CalcPi;
+			productReference = E973D7261A9C9C76004BCCD3 /* CalcPi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E973D7371A9C9C76004BCCD3 /* CalcPiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E973D7451A9C9C76004BCCD3 /* Build configuration list for PBXNativeTarget "CalcPiTests" */;
+			buildPhases = (
+				E973D7341A9C9C76004BCCD3 /* Sources */,
+				E973D7351A9C9C76004BCCD3 /* Frameworks */,
+				E973D7361A9C9C76004BCCD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E973D73A1A9C9C76004BCCD3 /* PBXTargetDependency */,
+			);
+			name = CalcPiTests;
+			productName = CalcPiTests;
+			productReference = E973D7381A9C9C76004BCCD3 /* CalcPiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E973D71E1A9C9C76004BCCD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = CertaSystems;
+				TargetAttributes = {
+					E973D7251A9C9C76004BCCD3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E973D7371A9C9C76004BCCD3 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E973D7251A9C9C76004BCCD3;
+					};
+				};
+			};
+			buildConfigurationList = E973D7211A9C9C76004BCCD3 /* Build configuration list for PBXProject "CalcPi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E973D71D1A9C9C76004BCCD3;
+			productRefGroup = E973D7271A9C9C76004BCCD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E973D7251A9C9C76004BCCD3 /* CalcPi */,
+				E973D7371A9C9C76004BCCD3 /* CalcPiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E973D7241A9C9C76004BCCD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E973D7301A9C9C76004BCCD3 /* Images.xcassets in Resources */,
+				E973D7331A9C9C76004BCCD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E973D7361A9C9C76004BCCD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E973D7221A9C9C76004BCCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E973D72E1A9C9C76004BCCD3 /* ViewController.swift in Sources */,
+				E973D72C1A9C9C76004BCCD3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E973D7341A9C9C76004BCCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E973D73F1A9C9C76004BCCD3 /* CalcPiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E973D73A1A9C9C76004BCCD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E973D7251A9C9C76004BCCD3 /* CalcPi */;
+			targetProxy = E973D7391A9C9C76004BCCD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E973D7311A9C9C76004BCCD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E973D7321A9C9C76004BCCD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E973D7401A9C9C76004BCCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E973D7411A9C9C76004BCCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E973D7431A9C9C76004BCCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalcPi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E973D7441A9C9C76004BCCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalcPi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E973D7461A9C9C76004BCCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalcPiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcPi.app/Contents/MacOS/CalcPi";
+			};
+			name = Debug;
+		};
+		E973D7471A9C9C76004BCCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalcPiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcPi.app/Contents/MacOS/CalcPi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E973D7211A9C9C76004BCCD3 /* Build configuration list for PBXProject "CalcPi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E973D7401A9C9C76004BCCD3 /* Debug */,
+				E973D7411A9C9C76004BCCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E973D7421A9C9C76004BCCD3 /* Build configuration list for PBXNativeTarget "CalcPi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E973D7431A9C9C76004BCCD3 /* Debug */,
+				E973D7441A9C9C76004BCCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E973D7451A9C9C76004BCCD3 /* Build configuration list for PBXNativeTarget "CalcPiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E973D7461A9C9C76004BCCD3 /* Debug */,
+				E973D7471A9C9C76004BCCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E973D71E1A9C9C76004BCCD3 /* Project object */;
+}
