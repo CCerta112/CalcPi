@@ -11,21 +11,44 @@ import Cocoa
 
 class Controller: NSViewController {
 	
-	@IBOutlet weak var depthSlider: NSSlider!
-	@IBOutlet weak var cycleSlider: NSSlider!
 	@IBOutlet weak var depthIndicator: NSTextField!
 	@IBOutlet weak var cycleIndicator: NSTextField!
 	@IBOutlet weak var piField: NSTextField!
 	@IBOutlet weak var progressionBar: NSProgressIndicator!
 	
+	var depth = 0
+	var cycles = 0
+	var isPaused = false
+	
+	
+	@IBAction func depthSlider(sender: NSSlider) {
+		depth = sender.integerValue
+		depthIndicator.stringValue = String(depth)
+	}
+	
+	@IBAction func cycleSlider(sender: NSSlider) {
+		cycles = sender.integerValue
+		cycleIndicator.stringValue = String(cycles)
+	}
+	
+	
+	let brain = CCPi()
 	
 	@IBAction func resetButton(sender: NSButton) {
+//		if isPaused {
+//			isPaused = false
+//			sender.
+//		} else {
+//			isPaused = true
+//		}
+//		
 	}
 	
 	@IBAction func pauseButton(sender: NSButton) {
 	}
 	
 	@IBAction func startButton(sender: NSButton) {
+		piField.stringValue = "Pi = \(brain.calcPiWith(cycles, range: depth))"
 	}
 	
 	

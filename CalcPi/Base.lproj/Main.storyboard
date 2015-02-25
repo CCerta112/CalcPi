@@ -650,8 +650,8 @@
         <scene sceneID="1Gg-Wt-ZVI">
             <objects>
                 <windowController id="y4j-rb-wlg" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="KRr-dH-M6L">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="CalcDatSweetPi" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="KRr-dH-M6L">
+                        <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="1034" y="783" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
@@ -676,14 +676,17 @@
                         <subviews>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="po1-jc-0q9">
                                 <rect key="frame" x="18" y="160" width="394" height="21"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="7XU-gU-ueW"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="7XU-gU-ueW"/>
                                 <connections>
-                                    <action selector="test:" target="TET-F5-Qpg" id="2EI-SG-3DF"/>
+                                    <action selector="depthSlider:" target="TET-F5-Qpg" id="8oS-OT-u3X"/>
                                 </connections>
                             </slider>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-nr-wqK">
                                 <rect key="frame" x="18" y="110" width="394" height="21"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="C5q-EH-MuP"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100000000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="C5q-EH-MuP"/>
+                                <connections>
+                                    <action selector="cycleSlider:" target="TET-F5-Qpg" id="PNq-N1-Ip8"/>
+                                </connections>
                             </slider>
                             <progressIndicator fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-SS-Qph">
                                 <rect key="frame" x="20" y="85" width="440" height="20"/>

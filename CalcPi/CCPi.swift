@@ -11,47 +11,40 @@ import Cocoa
 
 class CCPi {
 	
-	var doneCycles: Int
-	var depth: Int
-	var totalHits: Int
-	var circleHits: Int
+	func randomNumber(range: Int) -> Int {
+		return Int(arc4random_uniform(range + 1))
+	}
 	
-	var cycles: Int {
-		get {
-			return self.cycles
+	func isHit(somePoint: Point, range: Int) -> Bool {
+		let radius: Double = Double(range) / 2.0
+		let yDiffSquared: Double = (somePoint.yValue - radius) * (somePoint.yValue - radius)
+		let xDiffSquared: Double = (somePoint.xValue - radius) * (somePoint.xValue - radius)
+		return sqrt(yDiffSquared + xDiffSquared) <= radius
+	}
+	
+	struct Point {
+		let xValue: Double = 0
+		let yValue: Double = 0
+	}
+	
+	func createPoint(range: Int) -> Point {
+		return Point(xValue: Double(randomNumber(range)), yValue: Double(randomNumber(range)))
+	}
+	
+	func calcPiWith(cycles: Int, range: Int) -> Double {
+		var total = 0
+		var hits = 0
+		var somePoint: Point = createPoint(range)
+		for var i = 0; i < cycles; ++i {
+			if isHit(somePoint, range: range) {
+				++hits
+			}
+			somePoint = createPoint(range)
+			total = i
 		}
 		
-		set {
-			self.cycles = newValue
-		}
-	}
-	
-	init(doneCycles: Int, depth: Int) {
-		self.doneCycles = doneCycles
-		self.depth = depth
-		self.totalHits = 0
-		self.circleHits = 0
-	}
-	
-	
-	struct MiddlePoint {
-		var x: Double = 0
-		var y: Double = 0
+		return 4 * Double(hits) / Double(total)
 		
 	}
 	
-	
-	func calcPi(depth: Int, cycle: Int) -> Double {
-		while doneCycles <= cycles {
-			
-		}
-	}
-	
-	func wasHit(xC: Double, yC: Double, range: Double) -> Bool {
-		var depth = range / 2
-		let xSquared: Double = (xC - depth) * (xC - depth)
-		let ySquared: Double = (yC - depth) * (yC - depth)
-		let result: Double = xSquared + ySquared
-		return sqrt(result) <= Double(range)
-	}
 }
