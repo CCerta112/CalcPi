@@ -671,28 +671,25 @@
             <objects>
                 <viewController id="TET-F5-Qpg" customClass="Controller" customModule="CalcPi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="jMi-y0-HLI">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="283"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="257"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="po1-jc-0q9">
-                                <rect key="frame" x="18" y="160" width="394" height="21"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="7XU-gU-ueW"/>
+                                <rect key="frame" x="18" y="134" width="359" height="21"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100000" doubleValue="1000" tickMarkPosition="above" sliderType="linear" id="7XU-gU-ueW"/>
                                 <connections>
                                     <action selector="depthSlider:" target="TET-F5-Qpg" id="8oS-OT-u3X"/>
                                 </connections>
                             </slider>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-nr-wqK">
-                                <rect key="frame" x="18" y="110" width="394" height="21"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100000000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="C5q-EH-MuP"/>
+                                <rect key="frame" x="18" y="84" width="359" height="21"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100000000" doubleValue="5000" tickMarkPosition="above" sliderType="linear" id="C5q-EH-MuP"/>
                                 <connections>
                                     <action selector="cycleSlider:" target="TET-F5-Qpg" id="PNq-N1-Ip8"/>
                                 </connections>
                             </slider>
-                            <progressIndicator fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-SS-Qph">
-                                <rect key="frame" x="20" y="85" width="440" height="20"/>
-                            </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fk-5O-t6k">
-                                <rect key="frame" x="18" y="187" width="444" height="17"/>
+                                <rect key="frame" x="18" y="161" width="444" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Depth:" id="ovB-18-bMS">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -700,7 +697,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAA-dO-rFt">
-                                <rect key="frame" x="18" y="212" width="444" height="51"/>
+                                <rect key="frame" x="18" y="186" width="444" height="51"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="ZZE-11-PDV">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">Calculate Pi!
@@ -711,41 +708,21 @@ and let the App take care of the magic.</string>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-pp-bSd">
-                                <rect key="frame" x="18" y="137" width="444" height="17"/>
+                                <rect key="frame" x="18" y="111" width="444" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Cycles:" id="w9H-de-UbL">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbC-LL-1Jv">
-                                <rect key="frame" x="201" y="38" width="79" height="32"/>
-                                <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mFP-qt-tTa">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="pauseButton:" target="TET-F5-Qpg" id="ST1-Lb-qvc"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJC-xe-IjJ">
-                                <rect key="frame" x="280" y="38" width="79" height="32"/>
+                                <rect key="frame" x="14" y="38" width="452" height="32"/>
                                 <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4yt-hm-84z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="startButton:" target="TET-F5-Qpg" id="KGW-7j-JEH"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcb-Nk-Vrp">
-                                <rect key="frame" x="122" y="38" width="79" height="32"/>
-                                <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iW5-WR-lqi">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="resetButton:" target="TET-F5-Qpg" id="KPp-8k-vkg"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7b2-GB-B9n">
@@ -757,16 +734,16 @@ and let the App take care of the magic.</string>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PEI-rZ-hGd">
-                                <rect key="frame" x="416" y="112" width="46" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Cycles" id="SeX-SF-6zN">
+                                <rect key="frame" x="381" y="86" width="81" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="5000" id="SeX-SF-6zN">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3vM-Y8-MWT">
-                                <rect key="frame" x="416" y="162" width="46" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Depth" id="of6-3y-M7l">
+                                <rect key="frame" x="381" y="136" width="81" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="1000" id="of6-3y-M7l">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -779,16 +756,13 @@ and let the App take care of the magic.</string>
                         <outlet property="cycleSlider" destination="lAm-nr-wqK" id="zzi-AY-T8t"/>
                         <outlet property="depthIndicator" destination="3vM-Y8-MWT" id="mVX-yV-5kO"/>
                         <outlet property="depthSlider" destination="po1-jc-0q9" id="7yQ-ai-9Or"/>
-                        <outlet property="pauseButton" destination="WbC-LL-1Jv" id="puF-Cl-ea3"/>
                         <outlet property="piField" destination="7b2-GB-B9n" id="jWe-HD-krU"/>
-                        <outlet property="progressionBar" destination="0zc-SS-Qph" id="Brr-So-t4K"/>
-                        <outlet property="resetButton" destination="Jcb-Nk-Vrp" id="Nk5-JK-NgZ"/>
                         <outlet property="startButton" destination="cJC-xe-IjJ" id="C6C-fq-aMw"/>
                     </connections>
                 </viewController>
                 <customObject id="kNA-xW-i1Z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="234.5"/>
+            <point key="canvasLocation" x="257" y="221.5"/>
         </scene>
     </scenes>
 </document>

@@ -16,10 +16,8 @@ class Controller: NSViewController {
 	@IBOutlet weak var piField: NSTextField!
 	@IBOutlet weak var progressionBar: NSProgressIndicator!
 	
-	var depth = 0
-	var cycles = 0
-	var isPaused = false
-	
+	var depth = 1000
+	var cycles = 5000
 	
 	@IBAction func depthSlider(sender: NSSlider) {
 		depth = sender.integerValue
@@ -33,20 +31,7 @@ class Controller: NSViewController {
 	
 	
 	let brain = CCPi()
-	
-	@IBAction func resetButton(sender: NSButton) {
-//		if isPaused {
-//			isPaused = false
-//			sender.
-//		} else {
-//			isPaused = true
-//		}
-//		
-	}
-	
-	@IBAction func pauseButton(sender: NSButton) {
-	}
-	
+
 	@IBAction func startButton(sender: NSButton) {
 		piField.stringValue = "Pi = \(brain.calcPiWith(cycles, range: depth))"
 	}
